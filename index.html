@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>Blogin</title>
+</head>
+
+<body>
+
+      <div class="main-screen" onclick="toggleMenu()"></div>
+
+      <header class="main-header">
+            <div class="header-container main-container flex align-item-center spcae-between">
+                  <!-- <div class="logo">Blogin<span class="logo-dot">.</span></div> -->
+                  <div class="capitalize logo">blogin<span class="logo-dot">.</span></div>
+                  <ul class="navbar-conntainer clean-ul flex">
+                        <li><a href="" class="flex align-item-center capitalize nav-item">journal</a></li>
+                        <li><a href="" class="flex align-item-center capitalize nav-item">about</a></li>
+                        <li><a href="" class="flex align-item-center capitalize nav-item">work</a></li>
+                        <li><a href="" class="flex align-item-center capitalize nav-item">contact</a></li>
+                  </ul>
+                  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            </div>
+      </header>
+
+      <main class="main-content main-container">
+            <article class="card flex">
+                  <img class="card-image" src="./image/img1.png" />
+                  <div class="card-info">
+                        <div class="card-title">Duis aute irure dolor in
+                              henderit in voluptate.
+                        </div>
+                        <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                              nisi ut
+                              aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id
+                              est
+                              laborum.
+                        </p>
+                        <p>
+                              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                              fugiat
+                              nulla pariatur...
+                        </p>
+
+                        <!-- <button class="card-btn">Continue Reading<img src="./image/greenArrow.png" alt="" -->
+                        <button class="card-btn" onclick="openReadModal()">Continue Reading</button>
+                  </div>
+            </article>
+            <article class="card flex">
+                  <img class="card-image" src="./image/img2.png" />
+                  <div class="card-info">
+                        <div class="card-title">Duis aute irure dolor in
+                              henderit in voluptate.
+                        </div>
+                        <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                              nisi ut
+                              aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id
+                              est
+                              laborum.
+                        </p>
+                        <p>
+                              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                              fugiat
+                              nulla pariatur...
+                        </p>
+                        <!-- <button class="card-btn">Continue Reading<img src="./image/greenArrow.png" alt=""
+                                    class="card-btn-arrow"></button> -->
+                        <button class="card-btn" onclick="openReadModal()">Continue Reading</button>
+                  </div>
+            </article>
+            <article class="card flex">
+                  <img class="card-image" src="./image/img3.png" />
+                  <div class="card-info">
+                        <div class="card-title">Duis aute irure dolor in
+                              henderit in voluptate.
+                        </div>
+                        <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                              nisi ut
+                              aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id
+                              est
+                              laborum.
+                        </p>
+                        <p>
+                              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                              fugiat
+                              nulla pariatur...
+                        </p>
+                        <!-- <button class="card-btn">Continue Reading<img src="./image/greenArrow.png" alt=""
+                                    class="card-btn-arrow"></button> -->
+                        <button class="card-btn" onclick="openReadModal()">Continue Reading</button>
+                  </div>
+            </article>
+      </main>
+
+      <section class="main-pagenation  main-container flex spcae-between">
+            <div class="left-pagenation">
+                  <img class="arrow-left" src="./image/arrowLeft.png" alt=""> <a class="previous">Previous</a>
+            </div>
+            <div class="right-pagenation">
+                  <a class="next">Next</a><img class="arrow-right" src="./image/arrowRight.png" alt="">
+            </div>
+      </section>
+
+      <footer class="main-footer">
+            <div class="footer-container">
+                  <div class="footer-logo">Blogin<span class="logo-dot">.</span></div>
+                  <div class="footer-link">
+                        <small>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at
+                              <span class="strong">Pixelhint.com</span></small>
+                  </div>
+                  <ul class="social-links clean-ul flex">
+                        <li><a href="" class="icon-font facebook"></a></li>
+                        <li><a href="" class="icon-font twitter"></a></li>
+                        <li><a href="" class="icon-font behance"></a></li>
+                        <li><a href="" class="icon-font dribble"></a></li>
+                  </ul>
+            </div>
+      </footer>
+
+      <div class="read-modal" onclick="openReadModal()">
+            <div class="card-info">
+                  <div class="card-title">Duis aute irure dolor in
+                        henderit in voluptate.
+                  </div>
+                  <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum.
+                  </p>
+                  <p>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur...
+                  </p>
+                  <h2>Join us to get access to the latest stories!</h2>
+                  <label for="email">Enter email:</label>
+                  <input type="email" id="email" name="email">
+                  <button class="modal-btn button btn-submit">Submit</button>
+                  <!-- <button class="card-btn">Continue Reading<img src="./image/greenArrow.png" alt="" -->
+                  <button class="modal-close-btn button btn-close" onclick="closeReadModal(event)">Close</button>
+            </div>
+      </div>
+
+      <script src="./js/main.js"></script>
+</body>
+
+</html>
