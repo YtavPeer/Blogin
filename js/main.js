@@ -24,3 +24,10 @@ function closeReadModal(ev) {
       // document.body.classList.remove('modal-open');
 }
 
+
+function onJornalClick(ev) {
+      ev.preventDefault()
+      var menuJornal = document.querySelector('.jornal-drop-down').classList.toggle('openJornal')
+      
+}
+
